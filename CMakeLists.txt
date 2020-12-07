@@ -349,6 +349,8 @@ if(LEVELDB_BUILD_TESTS)
   leveldb_test("util/status_test.cc")
   leveldb_test("util/no_destructor_test.cc")
 
+  leveldb_test("my_test/test_first.cpp")
+
   if(NOT BUILD_SHARED_LIBS)
     leveldb_test("db/autocompact_test.cc")
     leveldb_test("db/corruption_test.cc")
@@ -493,3 +495,4 @@ if(LEVELDB_INSTALL)
     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
   )
 endif(LEVELDB_INSTALL)
+
